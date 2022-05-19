@@ -1,0 +1,69 @@
+extends layout/default.pug
+
+//- block append head
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+
+
+block page
+    section.ourwork
+        .container
+            .section-head
+                h3 Our Work
+                p We have addded our featured work here
+            .ourwork-content
+                .ourwork-card
+                    .ourwork-card-title
+                        h4 Project Name
+                        p Facebook marketing
+                    .ourwork-card-image
+                        img(src='/img/photo1.png')
+                .ourwork-card
+                    .ourwork-card-title
+                        h4 Project Name
+                        p Landing page
+                    .ourwork-card-image
+                        img(src='/img/photo2.png')
+                .ourwork-card
+                    .ourwork-card-title
+                        h4 Project Name
+                        p Landing page
+                    .ourwork-card-image
+                        img(src='/img/photo3.png')
+                .ourwork-card
+                    .ourwork-card-title
+                        h4 Project Name
+                        p Landing page
+                    .ourwork-card-image
+                        img(src='/img/photo4.png')
+
+    section.freefb
+        .container
+            .section-head
+                h3 Get Your Free Facebook Analysis Now
+                p Enter your details below
+                a.btn.btn-chevron-down(href='#')
+            .freefb-content
+                p
+                    | Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
+                form.freefb-form
+                    input.form-input(type='text' name='' placeholder='Your Name')
+                    input.form-input(type='text' name='' placeholder='Contact Number')
+                    input.form-input(type='text' name='' placeholder='Company Name')
+                    button.btn.btn-submit(type='submit') Submit Now
+                .close
+
+    section.touch
+        .container
+            .section-head
+                h3 Get in touch
+            .touch-content
+                .btngroup
+                    a.btn.btn-facebook(href='#')
+                    a.btn.btn-twitter(href='#')
+                    a.btn.btn-google(href='#')
+                    a.btn.btn-linkedin(href='#')
+                p Subscribe to newsletter to stay update with what is new
+                form.touch-form
+                    input.form-email(type='email' name='' placeholder='Email Address')
+                    a.btn.btn-tr(href='#') Subcribe
+

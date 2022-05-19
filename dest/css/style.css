@@ -1,0 +1,451 @@
+section .section-head h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+section .section-head p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+section.touch .touch-content p,
+section.freefb .freefb-content p,
+.btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus {
+  outline: 0 none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+.container {
+  width: min(100% - 40px, 1400px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+input {
+  display: block;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+input.form-input {
+  width: 100%;
+  color: #828282;
+  margin-bottom: 8px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+
+input.form-input:focus {
+  box-shadow: 0px 0px 5px 0px #1287BF;
+  border-color: #1287BF;
+}
+
+input.form-email {
+  width: 100%;
+  background-color: #515151;
+  color: #cecece;
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  height: 46px;
+  padding-inline: 32px;
+  padding-block: 11px;
+  cursor: pointer;
+}
+
+.btn.btn-submit {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #de2b24;
+}
+
+.btn.btn-tr,
+.btn.btn-linkedin,
+.btn.btn-google,
+.btn.btn-twitter,
+.btn.btn-facebook {
+  color: #ffffff;
+  border: 2px solid #515151;
+}
+
+.btn.btn-tr:hover,
+.btn.btn-linkedin:hover,
+.btn.btn-google:hover,
+.btn.btn-twitter:hover,
+.btn.btn-facebook:hover {
+  border-color: #de2b24;
+}
+
+.btn.btn-icon,
+.btn.btn-linkedin,
+.btn.btn-google,
+.btn.btn-twitter,
+.btn.btn-facebook {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  width: 46px;
+}
+
+.btn.btn-facebook {
+  background-image: url(/img/icon-fb.png);
+}
+
+.btn.btn-twitter {
+  background-image: url(/img/icon-tw.png);
+}
+
+.btn.btn-google {
+  background-image: url(/img/icon-go.png);
+}
+
+.btn.btn-linkedin {
+  background-image: url(/img/icon-li.png);
+}
+
+section {
+  padding-block: 50px;
+  text-align: center;
+}
+
+section .section-head h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+section .section-head p {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+section.ourwork {
+  background-color: #de2b24;
+}
+
+section.ourwork .section-head p:after {
+  content: "";
+  border-bottom: 4px solid white;
+  display: block;
+  width: 50px;
+  margin-inline: auto;
+  transform: translateY(1rem);
+}
+
+section.ourwork .ourwork-content {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  width: 100%;
+}
+
+section.ourwork .ourwork-card {
+  display: flex;
+}
+
+section.ourwork .ourwork-card .ourwork-card-title {
+  flex: 0 0 50%;
+  background-color: #f35e59;
+  background-image: url(/img/icon-tel.png);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  aspect-ratio: 1/1;
+}
+
+section.ourwork .ourwork-card .ourwork-card-title h4 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 50%;
+}
+
+section.ourwork .ourwork-card .ourwork-card-title p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section.ourwork .ourwork-card .ourwork-card-image {
+  flex: 0 0 50%;
+  font-size: 0;
+}
+
+section.freefb {
+  background-color: #1287bf;
+}
+
+section.freefb .section-head:after {
+  content: "";
+  border: 3px solid white;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-inline: auto;
+  border-radius: 50%;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 10-5 5-5-5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: 80%;
+}
+
+section.freefb .freefb-content {
+  position: relative;
+  margin-top: 50px;
+  max-width: 692px;
+  width: 100%;
+  padding: 48px 68px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+section.freefb .freefb-content:before {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  width: 42px;
+  height: 42px;
+  transform: rotate(45deg) translateX(-30px);
+  margin-inline: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+section.freefb .freefb-content p {
+  color: #828282;
+}
+
+section.freefb .freefb-content .freefb-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 50px 18px;
+}
+
+section.freefb .freefb-content .freefb-form .btn {
+  margin-top: 28px;
+}
+
+section.freefb .freefb-content .close {
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: #de2b24;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 4 L 4 20 M 4 4 L 20 20"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+}
+
+section.touch {
+  background-color: #2a2a2a;
+}
+
+section.touch .touch-content {
+  max-width: 692px;
+  width: 100%;
+}
+
+section.touch .touch-content .btngroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-block: 15px 28px;
+}
+
+section.touch .touch-content p {
+  color: #cecece;
+}
+
+section.touch .touch-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-block: 35px 18px;
+}
+
+section.touch .touch-content form .btn {
+  margin-top: 28px;
+}
+
+footer {
+  height: 67px;
+  color: #cecece;
+  background-color: #515151;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 921px) {
+  section.ourwork .ourwork-card:nth-child(n+3) .ourwork-card-title {
+    order: 2;
+  }
+
+  section.ourwork .ourwork-card:nth-child(n+3) .ourwork-card-image {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  section.freefb .freefb-content {
+    padding-inline: 20px;
+  }
+
+  section.freefb .freefb-content .freefb-form {
+    margin-inline: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section.ourwork .ourwork-card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 920px) {
+  section.ourwork .ourwork-card:nth-child(2n+2) .ourwork-card-title {
+    order: 2;
+  }
+
+  section.ourwork .ourwork-card:nth-child(2n+2) .ourwork-card-image {
+    order: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
