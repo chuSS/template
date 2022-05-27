@@ -161,12 +161,12 @@ section {
             }
         }
         .ourwork-content {
-            margin-top: 50px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             max-width: 1024px;
             width: 100%;
+            margin-block: 50px 68px;
         }
         .ourwork-card {
             display: flex;
@@ -199,6 +199,9 @@ section {
             }
         }
         @media screen and (min-width: 921px) {
+            .ourwork-card {
+                flex-basis: 50%;
+            }
             .ourwork-card:nth-child(n+3) {
                 .ourwork-card-title {
                     order: 2;
@@ -208,7 +211,7 @@ section {
                 }
             }
         }
-        @media screen and (min-width: 376px) and (max-width: 920px) {
+        @media screen and (min-width: 491px) and (max-width: 920px) {
             .ourwork-card:nth-child(2n+2) {
                 .ourwork-card-title {
                     order: 2;
@@ -218,7 +221,7 @@ section {
                 }
             }
         }
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 490px) {
             .ourwork-card {
                 flex-direction: column;
             }

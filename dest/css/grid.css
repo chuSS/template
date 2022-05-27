@@ -288,12 +288,12 @@ section.ourwork .section-head p:after {
 }
 
 section.ourwork .ourwork-content {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1024px;
   width: 100%;
+  margin-block: 50px 68px;
 }
 
 section.ourwork .ourwork-card {
@@ -443,6 +443,10 @@ footer {
 }
 
 @media screen and (min-width: 921px) {
+  section.ourwork .ourwork-card {
+    flex-basis: 50%;
+  }
+
   section.ourwork .ourwork-card:nth-child(n+3) .ourwork-card-title {
     order: 2;
   }
@@ -462,13 +466,13 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 490px) {
   section.ourwork .ourwork-card {
     flex-direction: column;
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 920px) {
+@media screen and (min-width: 491px) and (max-width: 920px) {
   section.ourwork .ourwork-card:nth-child(2n+2) .ourwork-card-title {
     order: 2;
   }
